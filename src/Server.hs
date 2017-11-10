@@ -4,7 +4,7 @@ module Server
   ( server
   ) where
 
-import           LIO.DCLabel
+{- import           LIO.DCLabel -}
 import           LIO.HTTP.Server.Frankie         hiding (server)
 import           LIO.HTTP.Server.Frankie.Loggers
 import           LIO.HTTP.Server.Frankie.Static
@@ -16,6 +16,7 @@ server = do
     port 3000
     appState ()
     static fileHandler "/assets" "public"
+    views htmlHandler "/views"
     logger DEBUG colorStdOutLogger
   dispatch $ do
     get "/" helloWorld
@@ -25,4 +26,4 @@ server = do
     respond notFound
 
 helloWorld :: DCController s
-helloWorld = respond $ okHtml "Hello, world!"
+helloWorld = respond $ render "index.html"

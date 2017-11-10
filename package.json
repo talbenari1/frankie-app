@@ -1,0 +1,42 @@
+{
+  "name": "frankie-app",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/talbenari1/frankie-app.git"
+  },
+  "author": "Tal Ben-Ari <tbenari@ucsd.edu>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/talbenari1/frankie-app/issues"
+  },
+  "homepage": "https://github.com/talbenari1/frankie-app#readme",
+  "dependencies": {
+    "@types/history": "^4.6.1",
+    "@types/react": "^16.0.20",
+    "@types/react-dom": "^16.0.2",
+    "@types/react-redux": "^5.0.12",
+    "@types/react-router": "^4.0.16",
+    "@types/react-router-redux": "^5.0.9",
+    "awesome-typescript-loader": "^3.3.0",
+    "history": "^4.7.2",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-redux": "^5.0.6",
+    "react-router": "^4.2.0",
+    "react-router-redux": "^5.0.0-alpha.8",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "tslint": "^5.8.0",
+    "tslint-language-service": "^0.9.6",
+    "typescript": "^2.6.1"
+  }
+}

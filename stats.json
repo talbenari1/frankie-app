@@ -1,0 +1,889 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "3.8.1",
+  "hash": "3c9a3fb70ad57136ad1a",
+  "time": 2050,
+  "publicPath": "",
+  "assetsByChunkName": {
+    "main": "main.js"
+  },
+  "assets": [
+    {
+      "name": "main.js",
+      "size": 4949,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "main"
+      ],
+      "emitted": true
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "main": {
+      "chunks": [
+        0
+      ],
+      "assets": [
+        "main.js"
+      ]
+    }
+  },
+  "chunks": [
+    {
+      "id": 0,
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "extraAsync": false,
+      "size": 1956,
+      "names": [
+        "main"
+      ],
+      "files": [
+        "main.js"
+      ],
+      "hash": "0a89c5a351267a4854db",
+      "parents": [],
+      "modules": [
+        {
+          "id": 0,
+          "identifier": "external \"React\"",
+          "name": "external \"React\"",
+          "index": 2,
+          "index2": 0,
+          "size": 42,
+          "cacheable": false,
+          "built": false,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "issuer": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/index.tsx",
+          "issuerId": 1,
+          "issuerName": "./web/index.tsx",
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": 1,
+              "moduleIdentifier": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/index.tsx",
+              "module": "./web/index.tsx",
+              "moduleName": "./web/index.tsx",
+              "type": "cjs require",
+              "userRequest": "react",
+              "loc": "7:12-28"
+            },
+            {
+              "moduleId": 2,
+              "moduleIdentifier": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/components/app.tsx",
+              "module": "./web/components/app.tsx",
+              "moduleName": "./web/components/app.tsx",
+              "type": "cjs require",
+              "userRequest": "react",
+              "loc": "3:12-28"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 1
+        },
+        {
+          "id": 1,
+          "identifier": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/index.tsx",
+          "name": "./web/index.tsx",
+          "index": 0,
+          "index2": 10,
+          "size": 1286,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "issuer": null,
+          "issuerId": null,
+          "issuerName": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 0,
+          "source": "\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nvar app_1 = require(\"./components/app\");\r\nvar reducers_1 = require(\"./reducers\");\r\nvar redux_1 = require(\"redux\");\r\nvar history_1 = require(\"history\");\r\nvar React = require(\"react\");\r\nvar react_dom_1 = require(\"react-dom\");\r\nvar react_redux_1 = require(\"react-redux\");\r\nvar redux_thunk_1 = require(\"redux-thunk\");\r\nvar react_router_redux_1 = require(\"react-router-redux\");\r\nvar react_router_1 = require(\"react-router\");\r\n// create the browser history\r\nvar history = history_1.createBrowserHistory();\r\n// grab the server's preloaded state and clear it from memory\r\nvar preloadedState = window.__PRELOADED_STATE__;\r\ndelete window.__PRELOADED_STATE__;\r\n// define the redux store\r\nvar store = redux_1.createStore(redux_1.combineReducers(reducers_1.reducers), preloadedState, redux_1.applyMiddleware(redux_thunk_1.default));\r\n// generate the app container\r\nvar container = function (root) { return (React.createElement(react_redux_1.Provider, { store: store },\r\n    React.createElement(react_router_redux_1.ConnectedRouter, { history: history },\r\n        React.createElement(react_router_1.Route, { path: \"/\", component: root })))); };\r\nreact_dom_1.render(container(app_1.App), document.getElementById('app'));\r\n"
+        },
+        {
+          "id": 2,
+          "identifier": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/components/app.tsx",
+          "name": "./web/components/app.tsx",
+          "index": 1,
+          "index2": 1,
+          "size": 231,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "issuer": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/index.tsx",
+          "issuerId": 1,
+          "issuerName": "./web/index.tsx",
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": 1,
+              "moduleIdentifier": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/index.tsx",
+              "module": "./web/index.tsx",
+              "moduleName": "./web/index.tsx",
+              "type": "cjs require",
+              "userRequest": "./components/app",
+              "loc": "3:12-39"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 1,
+          "source": "\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nvar React = require(\"react\");\r\nexports.App = function () { return React.createElement(\"h1\", null, \"Hello, world!\"); };\r\nexports.default = exports.App;\r\n"
+        },
+        {
+          "id": 3,
+          "identifier": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/reducers/index.ts",
+          "name": "./web/reducers/index.ts",
+          "index": 3,
+          "index2": 2,
+          "size": 103,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "issuer": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/index.tsx",
+          "issuerId": 1,
+          "issuerName": "./web/index.tsx",
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": 1,
+              "moduleIdentifier": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/index.tsx",
+              "module": "./web/index.tsx",
+              "moduleName": "./web/index.tsx",
+              "type": "cjs require",
+              "userRequest": "./reducers",
+              "loc": "4:17-38"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 1,
+          "source": "\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.reducers = {};\r\n"
+        },
+        {
+          "id": 4,
+          "identifier": "external \"Redux\"",
+          "name": "external \"Redux\"",
+          "index": 4,
+          "index2": 3,
+          "size": 42,
+          "cacheable": false,
+          "built": false,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "issuer": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/index.tsx",
+          "issuerId": 1,
+          "issuerName": "./web/index.tsx",
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": 1,
+              "moduleIdentifier": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/index.tsx",
+              "module": "./web/index.tsx",
+              "moduleName": "./web/index.tsx",
+              "type": "cjs require",
+              "userRequest": "redux",
+              "loc": "5:14-30"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 1
+        },
+        {
+          "id": 5,
+          "identifier": "external \"History\"",
+          "name": "external \"History\"",
+          "index": 5,
+          "index2": 4,
+          "size": 42,
+          "cacheable": false,
+          "built": false,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "issuer": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/index.tsx",
+          "issuerId": 1,
+          "issuerName": "./web/index.tsx",
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": 1,
+              "moduleIdentifier": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/index.tsx",
+              "module": "./web/index.tsx",
+              "moduleName": "./web/index.tsx",
+              "type": "cjs require",
+              "userRequest": "history",
+              "loc": "6:16-34"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 1
+        },
+        {
+          "id": 6,
+          "identifier": "external \"ReactDOM\"",
+          "name": "external \"ReactDOM\"",
+          "index": 6,
+          "index2": 5,
+          "size": 42,
+          "cacheable": false,
+          "built": false,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "issuer": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/index.tsx",
+          "issuerId": 1,
+          "issuerName": "./web/index.tsx",
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": 1,
+              "moduleIdentifier": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/index.tsx",
+              "module": "./web/index.tsx",
+              "moduleName": "./web/index.tsx",
+              "type": "cjs require",
+              "userRequest": "react-dom",
+              "loc": "8:18-38"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 1
+        },
+        {
+          "id": 7,
+          "identifier": "external \"ReactRedux\"",
+          "name": "external \"ReactRedux\"",
+          "index": 7,
+          "index2": 6,
+          "size": 42,
+          "cacheable": false,
+          "built": false,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "issuer": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/index.tsx",
+          "issuerId": 1,
+          "issuerName": "./web/index.tsx",
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": 1,
+              "moduleIdentifier": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/index.tsx",
+              "module": "./web/index.tsx",
+              "moduleName": "./web/index.tsx",
+              "type": "cjs require",
+              "userRequest": "react-redux",
+              "loc": "9:20-42"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 1
+        },
+        {
+          "id": 8,
+          "identifier": "external \"ReduxThunk\"",
+          "name": "external \"ReduxThunk\"",
+          "index": 8,
+          "index2": 7,
+          "size": 42,
+          "cacheable": false,
+          "built": false,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "issuer": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/index.tsx",
+          "issuerId": 1,
+          "issuerName": "./web/index.tsx",
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": 1,
+              "moduleIdentifier": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/index.tsx",
+              "module": "./web/index.tsx",
+              "moduleName": "./web/index.tsx",
+              "type": "cjs require",
+              "userRequest": "redux-thunk",
+              "loc": "10:20-42"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 1
+        },
+        {
+          "id": 9,
+          "identifier": "external \"ReactRouterRedux\"",
+          "name": "external \"ReactRouterRedux\"",
+          "index": 9,
+          "index2": 8,
+          "size": 42,
+          "cacheable": false,
+          "built": false,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "issuer": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/index.tsx",
+          "issuerId": 1,
+          "issuerName": "./web/index.tsx",
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": 1,
+              "moduleIdentifier": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/index.tsx",
+              "module": "./web/index.tsx",
+              "moduleName": "./web/index.tsx",
+              "type": "cjs require",
+              "userRequest": "react-router-redux",
+              "loc": "11:27-56"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 1
+        },
+        {
+          "id": 10,
+          "identifier": "external \"ReactRouter\"",
+          "name": "external \"ReactRouter\"",
+          "index": 10,
+          "index2": 9,
+          "size": 42,
+          "cacheable": false,
+          "built": false,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "issuer": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/index.tsx",
+          "issuerId": 1,
+          "issuerName": "./web/index.tsx",
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": 1,
+              "moduleIdentifier": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/index.tsx",
+              "module": "./web/index.tsx",
+              "moduleName": "./web/index.tsx",
+              "type": "cjs require",
+              "userRequest": "react-router",
+              "loc": "12:21-44"
+            }
+          ],
+          "usedExports": true,
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 1
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "moduleId": 1,
+          "module": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/index.tsx",
+          "moduleIdentifier": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/index.tsx",
+          "moduleName": "./web/index.tsx",
+          "loc": "",
+          "name": "main",
+          "reasons": []
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "identifier": "external \"React\"",
+      "name": "external \"React\"",
+      "index": 2,
+      "index2": 0,
+      "size": 42,
+      "cacheable": false,
+      "built": false,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "issuer": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/index.tsx",
+      "issuerId": 1,
+      "issuerName": "./web/index.tsx",
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 1,
+          "moduleIdentifier": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/index.tsx",
+          "module": "./web/index.tsx",
+          "moduleName": "./web/index.tsx",
+          "type": "cjs require",
+          "userRequest": "react",
+          "loc": "7:12-28"
+        },
+        {
+          "moduleId": 2,
+          "moduleIdentifier": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/components/app.tsx",
+          "module": "./web/components/app.tsx",
+          "moduleName": "./web/components/app.tsx",
+          "type": "cjs require",
+          "userRequest": "react",
+          "loc": "3:12-28"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 1
+    },
+    {
+      "id": 1,
+      "identifier": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/index.tsx",
+      "name": "./web/index.tsx",
+      "index": 0,
+      "index2": 10,
+      "size": 1286,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "issuer": null,
+      "issuerId": null,
+      "issuerName": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 0,
+      "source": "\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nvar app_1 = require(\"./components/app\");\r\nvar reducers_1 = require(\"./reducers\");\r\nvar redux_1 = require(\"redux\");\r\nvar history_1 = require(\"history\");\r\nvar React = require(\"react\");\r\nvar react_dom_1 = require(\"react-dom\");\r\nvar react_redux_1 = require(\"react-redux\");\r\nvar redux_thunk_1 = require(\"redux-thunk\");\r\nvar react_router_redux_1 = require(\"react-router-redux\");\r\nvar react_router_1 = require(\"react-router\");\r\n// create the browser history\r\nvar history = history_1.createBrowserHistory();\r\n// grab the server's preloaded state and clear it from memory\r\nvar preloadedState = window.__PRELOADED_STATE__;\r\ndelete window.__PRELOADED_STATE__;\r\n// define the redux store\r\nvar store = redux_1.createStore(redux_1.combineReducers(reducers_1.reducers), preloadedState, redux_1.applyMiddleware(redux_thunk_1.default));\r\n// generate the app container\r\nvar container = function (root) { return (React.createElement(react_redux_1.Provider, { store: store },\r\n    React.createElement(react_router_redux_1.ConnectedRouter, { history: history },\r\n        React.createElement(react_router_1.Route, { path: \"/\", component: root })))); };\r\nreact_dom_1.render(container(app_1.App), document.getElementById('app'));\r\n"
+    },
+    {
+      "id": 2,
+      "identifier": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/components/app.tsx",
+      "name": "./web/components/app.tsx",
+      "index": 1,
+      "index2": 1,
+      "size": 231,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "issuer": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/index.tsx",
+      "issuerId": 1,
+      "issuerName": "./web/index.tsx",
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 1,
+          "moduleIdentifier": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/index.tsx",
+          "module": "./web/index.tsx",
+          "moduleName": "./web/index.tsx",
+          "type": "cjs require",
+          "userRequest": "./components/app",
+          "loc": "3:12-39"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 1,
+      "source": "\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nvar React = require(\"react\");\r\nexports.App = function () { return React.createElement(\"h1\", null, \"Hello, world!\"); };\r\nexports.default = exports.App;\r\n"
+    },
+    {
+      "id": 3,
+      "identifier": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/reducers/index.ts",
+      "name": "./web/reducers/index.ts",
+      "index": 3,
+      "index2": 2,
+      "size": 103,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "issuer": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/index.tsx",
+      "issuerId": 1,
+      "issuerName": "./web/index.tsx",
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 1,
+          "moduleIdentifier": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/index.tsx",
+          "module": "./web/index.tsx",
+          "moduleName": "./web/index.tsx",
+          "type": "cjs require",
+          "userRequest": "./reducers",
+          "loc": "4:17-38"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 1,
+      "source": "\"use strict\";\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nexports.reducers = {};\r\n"
+    },
+    {
+      "id": 4,
+      "identifier": "external \"Redux\"",
+      "name": "external \"Redux\"",
+      "index": 4,
+      "index2": 3,
+      "size": 42,
+      "cacheable": false,
+      "built": false,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "issuer": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/index.tsx",
+      "issuerId": 1,
+      "issuerName": "./web/index.tsx",
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 1,
+          "moduleIdentifier": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/index.tsx",
+          "module": "./web/index.tsx",
+          "moduleName": "./web/index.tsx",
+          "type": "cjs require",
+          "userRequest": "redux",
+          "loc": "5:14-30"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 1
+    },
+    {
+      "id": 5,
+      "identifier": "external \"History\"",
+      "name": "external \"History\"",
+      "index": 5,
+      "index2": 4,
+      "size": 42,
+      "cacheable": false,
+      "built": false,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "issuer": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/index.tsx",
+      "issuerId": 1,
+      "issuerName": "./web/index.tsx",
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 1,
+          "moduleIdentifier": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/index.tsx",
+          "module": "./web/index.tsx",
+          "moduleName": "./web/index.tsx",
+          "type": "cjs require",
+          "userRequest": "history",
+          "loc": "6:16-34"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 1
+    },
+    {
+      "id": 6,
+      "identifier": "external \"ReactDOM\"",
+      "name": "external \"ReactDOM\"",
+      "index": 6,
+      "index2": 5,
+      "size": 42,
+      "cacheable": false,
+      "built": false,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "issuer": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/index.tsx",
+      "issuerId": 1,
+      "issuerName": "./web/index.tsx",
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 1,
+          "moduleIdentifier": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/index.tsx",
+          "module": "./web/index.tsx",
+          "moduleName": "./web/index.tsx",
+          "type": "cjs require",
+          "userRequest": "react-dom",
+          "loc": "8:18-38"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 1
+    },
+    {
+      "id": 7,
+      "identifier": "external \"ReactRedux\"",
+      "name": "external \"ReactRedux\"",
+      "index": 7,
+      "index2": 6,
+      "size": 42,
+      "cacheable": false,
+      "built": false,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "issuer": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/index.tsx",
+      "issuerId": 1,
+      "issuerName": "./web/index.tsx",
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 1,
+          "moduleIdentifier": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/index.tsx",
+          "module": "./web/index.tsx",
+          "moduleName": "./web/index.tsx",
+          "type": "cjs require",
+          "userRequest": "react-redux",
+          "loc": "9:20-42"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 1
+    },
+    {
+      "id": 8,
+      "identifier": "external \"ReduxThunk\"",
+      "name": "external \"ReduxThunk\"",
+      "index": 8,
+      "index2": 7,
+      "size": 42,
+      "cacheable": false,
+      "built": false,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "issuer": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/index.tsx",
+      "issuerId": 1,
+      "issuerName": "./web/index.tsx",
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 1,
+          "moduleIdentifier": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/index.tsx",
+          "module": "./web/index.tsx",
+          "moduleName": "./web/index.tsx",
+          "type": "cjs require",
+          "userRequest": "redux-thunk",
+          "loc": "10:20-42"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 1
+    },
+    {
+      "id": 9,
+      "identifier": "external \"ReactRouterRedux\"",
+      "name": "external \"ReactRouterRedux\"",
+      "index": 9,
+      "index2": 8,
+      "size": 42,
+      "cacheable": false,
+      "built": false,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "issuer": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/index.tsx",
+      "issuerId": 1,
+      "issuerName": "./web/index.tsx",
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 1,
+          "moduleIdentifier": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/index.tsx",
+          "module": "./web/index.tsx",
+          "moduleName": "./web/index.tsx",
+          "type": "cjs require",
+          "userRequest": "react-router-redux",
+          "loc": "11:27-56"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 1
+    },
+    {
+      "id": 10,
+      "identifier": "external \"ReactRouter\"",
+      "name": "external \"ReactRouter\"",
+      "index": 10,
+      "index2": 9,
+      "size": 42,
+      "cacheable": false,
+      "built": false,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "issuer": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/index.tsx",
+      "issuerId": 1,
+      "issuerName": "./web/index.tsx",
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 1,
+          "moduleIdentifier": "/home/thealtus/dev/frankie-app/node_modules/awesome-typescript-loader/dist/entry.js!/home/thealtus/dev/frankie-app/web/index.tsx",
+          "module": "./web/index.tsx",
+          "moduleName": "./web/index.tsx",
+          "type": "cjs require",
+          "userRequest": "react-router",
+          "loc": "12:21-44"
+        }
+      ],
+      "usedExports": true,
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 1
+    }
+  ],
+  "filteredModules": 0,
+  "children": []
+}

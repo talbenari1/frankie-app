@@ -1,2 +1,6 @@
 # Stack stuff
 .stack-work
+
+# Node stuff
+node_modules
+public
